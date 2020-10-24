@@ -15,13 +15,13 @@ namespace Filipan_Danut_Lab2.Data
             {
                 return; // BD a fost creata anterior
             }
-            var books = new Book[]
+            var books = new Books[]
             {
- new Book{Title="Baltagul",Author="Mihail Sadoveanu",Price=Decimal.Parse("22")},
- new Book{Title="Enigma Otiliei",Author="George Calinescu",Price=Decimal.Parse("18")},
- new Book{Title="Maytrei",Author="Mircea Eliade",Price=Decimal.Parse("27")}
+ new Books{Title="Baltagul",Author="Mihail Sadoveanu",Price=Decimal.Parse("22")},
+ new Books{Title="Enigma Otiliei",Author="George Calinescu",Price=Decimal.Parse("18")},
+ new Books{Title="Maytrei",Author="Mircea Eliade",Price=Decimal.Parse("27")}
             };
-            foreach (Book s in books)
+            foreach (Books s in books)
             {
                 context.Books.Add(s);
             }

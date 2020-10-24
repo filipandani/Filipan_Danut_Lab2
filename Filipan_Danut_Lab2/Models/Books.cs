@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Filipan_Danut_Lab2.Models
 {
-    public class Book
+    public class Books
     {
         public int ID { get; set; }
         public string Title { get; set; }
