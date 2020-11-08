@@ -37,9 +37,8 @@ namespace Filipan_Danut_Lab2.Controllers
                 searchString = currentFilter;
             }
             ViewData["CurrentFilter"] = searchString;
-            var books = from b in _context.Books
-                        select b;
-            if (!String.IsNullOrEmpty(searchString))
+            var books = from b in _context.Books select b;
+             if (!String.IsNullOrEmpty(searchString))
             {
                 books = books.Where(s => s.Title.Contains(searchString));
             }
